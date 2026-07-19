@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#0f172a" id="themeColorMeta">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Cholesterol Slayer">
@@ -24,6 +24,174 @@
     --text: #f8fafc;
     --muted: #94a3b8;
     --border: #334155;
+    --hero-bg: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    --tip-bg: linear-gradient(135deg, #14532d 0%, #064e3b 100%);
+    --tip-border: #166534;
+    --tip-text: #bbf7d0;
+    --tip-icon: var(--text);
+    --battle-bg: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+    --battle-text: #c4b5fd;
+    --monster-name: #fca5a5;
+    --install-bg: linear-gradient(135deg, #1e3a5f, #0f172a);
+    --install-border: var(--accent2);
+    --close-hover: rgba(239,68,68,0.2);
+    --card-hover-shadow: rgba(34,197,94,0.15);
+    --meal-good-bg: rgba(34,197,94,0.1);
+    --meal-good-border: var(--accent);
+    --meal-good-text: #86efac;
+    --meal-bad-bg: rgba(239,68,68,0.1);
+    --meal-bad-border: var(--danger);
+    --meal-bad-text: #fca5a5;
+    --meal-warn-bg: rgba(245,158,11,0.1);
+    --meal-warn-border: var(--warn);
+    --meal-warn-text: #fde68a;
+    --lab-note-bg: rgba(245,158,11,0.05);
+    --lab-good-note-bg: rgba(34,197,94,0.05);
+    --offline-text: #1e293b;
+    --levelup-stat: #86efac;
+    --quest-hover-bg: rgba(59,130,246,0.05);
+    --water-btn: linear-gradient(135deg, #0ea5e9, #3b82f6);
+    --checkin-btn: linear-gradient(135deg, var(--accent), #16a34a);
+    --xp-bar: linear-gradient(90deg, var(--accent), var(--accent2));
+    --monster-hp-bg: #4c1d95;
+    --monster-hp-fill: linear-gradient(90deg, var(--danger), #b91c1c);
+    --add-lab-border: var(--border);
+    --add-lab-color: var(--muted);
+    --add-lab-hover-border: var(--accent2);
+    --add-lab-hover-color: var(--accent2);
+    --stat-pill-bg: rgba(255,255,255,0.05);
+    --quest-item-bg: rgba(255,255,255,0.03);
+    --meal-cat-btn-bg: rgba(255,255,255,0.03);
+    --close-btn-bg: rgba(255,255,255,0.08);
+    --water-drop-empty: 0.25;
+    --levelup-sub: var(--muted);
+    --hero-name-color: var(--text);
+    --panel-title-color: var(--text);
+    --lab-section-color: var(--accent2);
+    --lab-pbf-color: var(--muted);
+    --lab-date-color: var(--muted);
+    --streak-sub-color: var(--muted);
+    --footer-color: var(--muted);
+    --reward-float: #fbbf24;
+    --checkin-next: var(--muted);
+    --checkin-xp: var(--accent);
+    --checkin-gold: #fbbf24;
+    --water-goal-color: var(--muted);
+    --meal-submit-bg: var(--accent2);
+    --meal-submit-hover: #2563eb;
+    --battle-btn-attack: var(--danger);
+    --battle-btn-heal: var(--accent);
+    --install-btn-bg: var(--accent2);
+    --install-btn-color: #fff;
+    --install-close-color: var(--muted);
+    --xp-bar-wrap-bg: #334155;
+    --monster-hp-wrap-bg: #4c1d95;
+    --hero-bar-before: linear-gradient(90deg, var(--accent), var(--accent2), var(--warn));
+    --hero-bar-border: var(--border);
+    --card-border: var(--border);
+    --panel-border: var(--border);
+    --quest-item-border: var(--border);
+    --lab-entry-border: var(--border);
+    --meal-cat-btn-border: var(--border);
+    --stat-pill-border: var(--border);
+    --lab-row-border: rgba(255,255,255,0.04);
+    --lab-section-border: var(--border);
+    --hero-bar-shadow: rgba(0,0,0,0.4);
+    --offline-bar-bg: var(--warn);
+    --levelup-overlay-bg: rgba(0,0,0,0.85);
+    --levelup-text-bg: linear-gradient(90deg, #fbbf24, #f59e0b, #fbbf24);
+    --tip-box-shadow: rgba(34,197,94,0.15);
+    --hero-bar-top: 3px;
+  }
+
+  [data-theme="light"] {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --accent: #16a34a;
+    --accent2: #2563eb;
+    --danger: #dc2626;
+    --warn: #d97706;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --hero-bg: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    --tip-bg: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    --tip-border: #86efac;
+    --tip-text: #14532d;
+    --tip-icon: var(--text);
+    --battle-bg: linear-gradient(180deg, #e0e7ff 0%, #c7d2fe 100%);
+    --battle-text: #4338ca;
+    --monster-name: #991b1b;
+    --install-bg: linear-gradient(135deg, #dbeafe, #eff6ff);
+    --install-border: var(--accent2);
+    --close-hover: rgba(220,38,38,0.15);
+    --card-hover-shadow: rgba(22,163,74,0.12);
+    --meal-good-bg: rgba(22,163,74,0.08);
+    --meal-good-border: var(--accent);
+    --meal-good-text: #14532d;
+    --meal-bad-bg: rgba(220,38,38,0.08);
+    --meal-bad-border: var(--danger);
+    --meal-bad-text: #7f1d1d;
+    --meal-warn-bg: rgba(217,119,6,0.08);
+    --meal-warn-border: var(--warn);
+    --meal-warn-text: #78350f;
+    --lab-note-bg: rgba(217,119,6,0.06);
+    --lab-good-note-bg: rgba(22,163,74,0.06);
+    --offline-text: #1e293b;
+    --levelup-stat: #14532d;
+    --quest-hover-bg: rgba(37,99,235,0.06);
+    --water-btn: linear-gradient(135deg, #0284c7, #2563eb);
+    --checkin-btn: linear-gradient(135deg, var(--accent), #15803d);
+    --xp-bar: linear-gradient(90deg, var(--accent), var(--accent2));
+    --monster-hp-bg: #c4b5fd;
+    --monster-hp-fill: linear-gradient(90deg, var(--danger), #b91c1c);
+    --add-lab-border: var(--border);
+    --add-lab-color: var(--muted);
+    --add-lab-hover-border: var(--accent2);
+    --add-lab-hover-color: var(--accent2);
+    --stat-pill-bg: rgba(0,0,0,0.04);
+    --quest-item-bg: rgba(0,0,0,0.02);
+    --meal-cat-btn-bg: rgba(0,0,0,0.02);
+    --close-btn-bg: rgba(0,0,0,0.05);
+    --water-drop-empty: 0.15;
+    --levelup-sub: var(--muted);
+    --hero-name-color: var(--text);
+    --panel-title-color: var(--text);
+    --lab-section-color: var(--accent2);
+    --lab-pbf-color: var(--muted);
+    --lab-date-color: var(--muted);
+    --streak-sub-color: var(--muted);
+    --footer-color: var(--muted);
+    --reward-float: #b45309;
+    --checkin-next: var(--muted);
+    --checkin-xp: var(--accent);
+    --checkin-gold: #b45309;
+    --water-goal-color: var(--muted);
+    --meal-submit-bg: var(--accent2);
+    --meal-submit-hover: #1d4ed8;
+    --battle-btn-attack: var(--danger);
+    --battle-btn-heal: var(--accent);
+    --install-btn-bg: var(--accent2);
+    --install-btn-color: #fff;
+    --install-close-color: var(--muted);
+    --xp-bar-wrap-bg: #cbd5e1;
+    --monster-hp-wrap-bg: #c4b5fd;
+    --hero-bar-before: linear-gradient(90deg, var(--accent), var(--accent2), var(--warn));
+    --hero-bar-border: var(--border);
+    --card-border: var(--border);
+    --panel-border: var(--border);
+    --quest-item-border: var(--border);
+    --lab-entry-border: var(--border);
+    --meal-cat-btn-border: var(--border);
+    --stat-pill-border: var(--border);
+    --lab-row-border: rgba(0,0,0,0.06);
+    --lab-section-border: var(--border);
+    --hero-bar-shadow: rgba(0,0,0,0.08);
+    --offline-bar-bg: var(--warn);
+    --levelup-overlay-bg: rgba(241,245,249,0.92);
+    --levelup-text-bg: linear-gradient(90deg, #d97706, #b45309, #d97706);
+    --tip-box-shadow: rgba(22,163,74,0.12);
+    --hero-bar-top: 3px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
   body {
@@ -46,8 +214,8 @@
   .install-banner {
     width: 100%;
     max-width: 420px;
-    background: linear-gradient(135deg, #1e3a5f, #0f172a);
-    border: 1px solid var(--accent2);
+    background: var(--install-bg);
+    border: 1px solid var(--install-border);
     border-radius: 12px;
     padding: 12px 16px;
     margin-bottom: 10px;
@@ -61,8 +229,8 @@
   .install-text { flex: 1; font-size: 0.8rem; }
   .install-text strong { font-family: 'Poppins', sans-serif; display: block; margin-bottom: 2px; }
   .install-btn {
-    background: var(--accent2);
-    color: #fff;
+    background: var(--install-btn-bg);
+    color: var(--install-btn-color);
     border: none;
     border-radius: 8px;
     padding: 6px 14px;
@@ -75,20 +243,44 @@
   .install-close {
     background: none;
     border: none;
-    color: var(--muted);
+    color: var(--install-close-color);
     font-size: 1.2rem;
     cursor: pointer;
     padding: 0 4px;
   }
+
+  .theme-toggle {
+    margin-left: auto;
+    background: var(--close-btn-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  .theme-toggle:hover {
+    transform: scale(1.1);
+    border-color: var(--accent2);
+    background: var(--quest-hover-bg);
+  }
+  .theme-toggle:active { transform: scale(0.92); }
   .hero-bar {
     width: 100%;
     max-width: 420px;
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border: 1px solid var(--border);
+    background: var(--hero-bg);
+    border: 1px solid var(--hero-bar-border);
     border-radius: 16px;
     padding: 14px 16px;
     margin-bottom: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 20px var(--hero-bar-shadow);
     position: relative;
     overflow: hidden;
   }
@@ -96,7 +288,7 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; height: 3px;
-    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--warn));
+    background: var(--hero-bar-before);
   }
   .hero-name {
     font-family: 'Poppins', sans-serif;
@@ -107,6 +299,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    color: var(--hero-name-color);
   }
   .hero-name .crown { font-size: 1.3rem; }
   .stats-row {
@@ -115,8 +308,8 @@
     flex-wrap: wrap;
   }
   .stat-pill {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid var(--border);
+    background: var(--stat-pill-bg);
+    border: 1px solid var(--stat-pill-border);
     border-radius: 20px;
     padding: 4px 12px;
     font-size: 0.78rem;
@@ -128,7 +321,7 @@
   .xp-bar-wrap {
     width: 100%;
     height: 10px;
-    background: #334155;
+    background: var(--xp-bar-wrap-bg);
     border-radius: 5px;
     margin-top: 8px;
     overflow: hidden;
@@ -136,7 +329,7 @@
   .xp-bar-fill {
     height: 100%;
     width: 0%;
-    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    background: var(--xp-bar);
     border-radius: 5px;
     transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
@@ -150,8 +343,8 @@
   .tip-box {
     width: 100%;
     max-width: 420px;
-    background: linear-gradient(135deg, #14532d 0%, #064e3b 100%);
-    border: 1px solid #166534;
+    background: var(--tip-bg);
+    border: 1px solid var(--tip-border);
     border-radius: 12px;
     padding: 10px 14px;
     margin-bottom: 12px;
@@ -163,11 +356,11 @@
     animation: tipPulse 4s ease-in-out infinite;
   }
   @keyframes tipPulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.15); }
+    0%, 100% { box-shadow: 0 0 0 0 var(--tip-box-shadow); }
     50% { box-shadow: 0 0 0 8px rgba(34,197,94,0); }
   }
-  .tip-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
-  .tip-text { color: #bbf7d0; font-weight: 600; }
+  .tip-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; color: var(--tip-icon); }
+  .tip-text { color: var(--tip-text); font-weight: 600; }
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -178,7 +371,7 @@
   }
   .card {
     background: var(--card);
-    border: 1px solid var(--border);
+    border: 1px solid var(--card-border);
     border-radius: 14px;
     padding: 14px 8px;
     text-align: center;
@@ -193,7 +386,7 @@
   .card:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
-    box-shadow: 0 8px 24px rgba(34,197,94,0.15);
+    box-shadow: 0 8px 24px var(--card-hover-shadow);
   }
   .card:active { transform: scale(0.96); }
   .card-icon {
@@ -228,7 +421,7 @@
     width: 100%;
     max-width: 420px;
     background: var(--card);
-    border: 1px solid var(--border);
+    border: 1px solid var(--panel-border);
     border-radius: 16px;
     padding: 16px;
     margin-bottom: 12px;
@@ -250,9 +443,10 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 800;
+    color: var(--panel-title-color);
   }
   .close-btn {
-    background: rgba(255,255,255,0.08);
+    background: var(--close-btn-bg);
     border: none;
     color: var(--muted);
     width: 28px; height: 28px;
@@ -261,7 +455,7 @@
     font-size: 1rem;
     display: flex; align-items: center; justify-content: center;
   }
-  .close-btn:hover { background: rgba(239,68,68,0.2); color: var(--danger); }
+  .close-btn:hover { background: var(--close-hover); color: var(--danger); }
 
   .streak-flame {
     text-align: center;
@@ -283,7 +477,7 @@
   .streak-sub {
     text-align: center;
     font-size: 0.8rem;
-    color: var(--muted);
+    color: var(--streak-sub-color);
     margin-bottom: 16px;
     font-weight: 600;
   }
@@ -292,7 +486,7 @@
     padding: 14px;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(135deg, var(--accent), #16a34a);
+    background: var(--checkin-btn);
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -315,7 +509,7 @@
   .checkin-btn:not(:disabled):active { transform: scale(0.97); }
   .reward-float {
     position: absolute;
-    color: #fbbf24;
+    color: var(--reward-float);
     font-weight: 900;
     font-size: 1.2rem;
     pointer-events: none;
@@ -328,8 +522,8 @@
 
   .quest-list { display: flex; flex-direction: column; gap: 8px; }
   .quest-item {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid var(--border);
+    background: var(--quest-item-bg);
+    border: 1px solid var(--quest-item-border);
     border-radius: 10px;
     padding: 10px 12px;
     display: flex;
@@ -339,7 +533,7 @@
     transition: all 0.2s;
     touch-action: manipulation;
   }
-  .quest-item:hover { border-color: var(--accent2); background: rgba(59,130,246,0.05); }
+  .quest-item:hover { border-color: var(--accent2); background: var(--quest-hover-bg); }
   .quest-item.completed { opacity: 0.5; border-color: var(--accent); }
   .quest-item.completed .quest-check { background: var(--accent); border-color: var(--accent); }
   .quest-check {
@@ -361,7 +555,7 @@
     padding: 6px 12px;
     border-radius: 20px;
     border: 1px solid var(--border);
-    background: rgba(255,255,255,0.03);
+    background: var(--meal-cat-btn-bg);
     color: var(--text);
     font-family: 'Nunito', sans-serif;
     font-size: 0.78rem;
@@ -394,7 +588,7 @@
     margin-top: 8px;
     touch-action: manipulation;
   }
-  .meal-submit:hover { background: #2563eb; }
+  .meal-submit:hover { background: var(--meal-submit-hover); }
   .meal-result {
     margin-top: 12px;
     padding: 12px;
@@ -405,12 +599,12 @@
     font-weight: 600;
   }
   .meal-result.show { display: block; animation: panelIn 0.3s ease; }
-  .meal-result.good { background: rgba(34,197,94,0.1); border: 1px solid var(--accent); color: #86efac; }
-  .meal-result.bad { background: rgba(239,68,68,0.1); border: 1px solid var(--danger); color: #fca5a5; }
-  .meal-result.warn { background: rgba(245,158,11,0.1); border: 1px solid var(--warn); color: #fde68a; }
+  .meal-result.good { background: var(--meal-good-bg); border: 1px solid var(--meal-good-border); color: var(--meal-good-text); }
+  .meal-result.bad { background: var(--meal-bad-bg); border: 1px solid var(--meal-bad-border); color: var(--meal-bad-text); }
+  .meal-result.warn { background: var(--meal-warn-bg); border: 1px solid var(--meal-warn-border); color: var(--meal-warn-text); }
 
   .battle-arena {
-    background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+    background: var(--battle-bg);
     border-radius: 12px;
     padding: 16px;
     text-align: center;
@@ -431,13 +625,13 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 800;
-    color: #fca5a5;
+    color: var(--monster-name);
     margin-bottom: 8px;
   }
   .monster-hp-wrap {
     width: 100%;
     height: 14px;
-    background: #4c1d95;
+    background: var(--monster-hp-bg);
     border-radius: 7px;
     overflow: hidden;
     margin-bottom: 12px;
@@ -445,7 +639,7 @@
   .monster-hp-fill {
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, var(--danger), #b91c1c);
+    background: var(--monster-hp-fill);
     border-radius: 7px;
     transition: width 0.4s ease;
   }
@@ -461,13 +655,13 @@
     transition: all 0.2s;
     touch-action: manipulation;
   }
-  .battle-btn.attack { background: var(--danger); color: #fff; }
-  .battle-btn.heal { background: var(--accent); color: #fff; }
+  .battle-btn.attack { background: var(--battle-btn-attack); color: #fff; }
+  .battle-btn.heal { background: var(--battle-btn-heal); color: #fff; }
   .battle-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
   .battle-log {
     margin-top: 12px;
     font-size: 0.8rem;
-    color: #c4b5fd;
+    color: var(--battle-text);
     min-height: 24px;
     font-weight: 600;
   }
@@ -497,7 +691,7 @@
   }
   .water-drop {
     font-size: 1.6rem;
-    opacity: 0.25;
+    opacity: var(--water-drop-empty);
     transition: all 0.3s ease;
     cursor: pointer;
   }
@@ -512,7 +706,7 @@
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+    background: var(--water-btn);
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 0.95rem;
@@ -521,11 +715,11 @@
     touch-action: manipulation;
   }
   .water-btn:hover { filter: brightness(1.1); }
-  .water-goal { text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 8px; font-weight: 600; }
+  .water-goal { text-align: center; font-size: 0.8rem; color: var(--water-goal-color); margin-top: 8px; font-weight: 600; }
 
   .lab-entry {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid var(--border);
+    background: var(--quest-item-bg);
+    border: 1px solid var(--lab-entry-border);
     border-radius: 10px;
     padding: 12px;
     margin-bottom: 10px;
@@ -533,7 +727,7 @@
   .lab-date {
     font-family: 'Poppins', sans-serif;
     font-size: 0.75rem;
-    color: var(--muted);
+    color: var(--lab-date-color);
     margin-bottom: 4px;
     font-weight: 600;
   }
@@ -548,7 +742,7 @@
     justify-content: space-between;
     font-size: 0.8rem;
     padding: 3px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid var(--lab-row-border);
   }
   .lab-row:last-child { border-bottom: none; }
   .lab-val { font-weight: 700; }
@@ -559,10 +753,10 @@
     font-family: 'Poppins', sans-serif;
     font-size: 0.85rem;
     font-weight: 800;
-    color: var(--accent2);
+    color: var(--lab-section-color);
     margin: 14px 0 8px 0;
     padding-bottom: 4px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--lab-section-border);
   }
   .lab-section-header:first-child { margin-top: 0; }
   .lab-note {
@@ -570,14 +764,14 @@
     color: var(--muted);
     margin-top: 8px;
     padding: 8px;
-    background: rgba(245,158,11,0.05);
+    background: var(--lab-note-bg);
     border-radius: 8px;
     border-left: 3px solid var(--warn);
     font-weight: 600;
   }
   .lab-pbf {
     font-size: 0.78rem;
-    color: var(--muted);
+    color: var(--lab-pbf-color);
     margin-top: 8px;
     font-style: italic;
     line-height: 1.5;
@@ -585,22 +779,22 @@
   .add-lab-btn {
     width: 100%;
     padding: 10px;
-    border: 1px dashed var(--border);
+    border: 1px dashed var(--add-lab-border);
     border-radius: 10px;
     background: transparent;
-    color: var(--muted);
+    color: var(--add-lab-color);
     font-family: 'Poppins', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
     margin-top: 8px;
   }
-  .add-lab-btn:hover { border-color: var(--accent2); color: var(--accent2); }
+  .add-lab-btn:hover { border-color: var(--add-lab-hover-border); color: var(--add-lab-hover-color); }
 
   .levelup-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.85);
+    background: var(--levelup-overlay-bg);
     display: none;
     align-items: center;
     justify-content: center;
@@ -614,7 +808,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 2.2rem;
     font-weight: 900;
-    background: linear-gradient(90deg, #fbbf24, #f59e0b, #fbbf24);
+    background: var(--levelup-text-bg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -626,8 +820,8 @@
     50% { transform: scale(1.2); }
     100% { transform: scale(1); opacity: 1; }
   }
-  .levelup-sub { color: var(--muted); font-size: 1rem; font-weight: 600; }
-  .levelup-stat { color: #86efac; font-size: 0.9rem; margin-top: 8px; font-weight: 700; }
+  .levelup-sub { color: var(--levelup-sub); font-size: 1rem; font-weight: 600; }
+  .levelup-stat { color: var(--levelup-stat); font-size: 0.9rem; margin-top: 8px; font-weight: 700; }
   .confetti {
     position: absolute;
     width: 8px; height: 8px;
@@ -641,7 +835,7 @@
 
   .footer-note {
     font-size: 0.7rem;
-    color: var(--muted);
+    color: var(--footer-color);
     text-align: center;
     margin-top: 8px;
     max-width: 420px;
@@ -652,8 +846,8 @@
   .offline-bar {
     width: 100%;
     max-width: 420px;
-    background: var(--warn);
-    color: #1e293b;
+    background: var(--offline-bar-bg);
+    color: var(--offline-text);
     text-align: center;
     padding: 6px;
     border-radius: 8px;
@@ -682,7 +876,7 @@
 <div class="offline-bar" id="offlineBar">⚠️ You're offline — progress will sync when you reconnect</div>
 
 <div class="hero-bar">
-  <div class="hero-name"><span class="crown">👑</span> <span id="heroTitle">Cholesterol Slayer</span></div>
+  <div class="hero-name"><span class="crown">👑</span> <span id="heroTitle">Cholesterol Slayer</span><button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button></div>
   <div class="stats-row">
     <div class="stat-pill">⚔️ Lv <span id="levelNum">1</span></div>
     <div class="stat-pill">❤️ <span id="hpNum">100</span>/100</div>
@@ -739,8 +933,8 @@
   <button class="checkin-btn" id="checkinBtn" onclick="doCheckin(this)">
     ⚡ CLAIM DAILY REWARD
   </button>
-  <div style="margin-top:14px; font-size:0.78rem; color:var(--muted); text-align:center;">
-    Next reward: <span style="color:var(--accent); font-weight:700;">+50 XP</span> & <span style="color:#fbbf24; font-weight:700;">+10 Gold</span>
+  <div style="margin-top:14px; font-size:0.78rem; color:var(--checkin-next); text-align:center;">
+    Next reward: <span style="color:var(--checkin-xp); font-weight:700;">+50 XP</span> & <span style="color:var(--checkin-gold); font-weight:700;">+10 Gold</span>
   </div>
 </div>
 
@@ -842,7 +1036,7 @@
       <div class="lab-row"><span>Mucus</span><span class="lab-val good">Nil ✓</span></div>
       <div class="lab-row"><span>Other</span><span class="lab-val good">Nil ✓</span></div>
 
-      <div class="lab-note" style="border-left-color: var(--accent); background: rgba(34,197,94,0.05);">
+      <div class="lab-note" style="border-left-color: var(--accent); background: var(--lab-good-note-bg);">
         💚 <strong>Focus Areas for Joel:</strong><br>
         1. <strong>Total Cholesterol 7.3</strong> — Target &lt;5.2. Cut saturated fat, increase fiber.<br>
         2. <strong>LDL 5.1</strong> — Target &lt;2.6. This is the "bad" cholesterol. Exercise + diet are key.<br>
@@ -1066,7 +1260,41 @@ self.addEventListener('fetch', e => { e.respondWith(fetch(e.request).catch(() =>
 
   let selectedMeals = new Set();
 
+
+  // ========== THEME TOGGLE ==========
+  function initTheme() {
+    const saved = localStorage.getItem('cholesterolSlayerTheme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = saved ? saved === 'dark' : prefersDark;
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    updateThemeIcon(isDark);
+
+    const meta = document.getElementById('themeColorMeta');
+    if (meta) meta.content = isDark ? '#0f172a' : '#f1f5f9';
+  }
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('cholesterolSlayerTheme', next);
+    updateThemeIcon(next === 'dark');
+    const meta = document.getElementById('themeColorMeta');
+    if (meta) meta.content = next === 'dark' ? '#0f172a' : '#f1f5f9';
+  }
+  function updateThemeIcon(isDark) {
+    const btn = document.getElementById('themeToggle');
+    if (btn) btn.textContent = isDark ? '🌙' : '☀️';
+  }
+  // Listen for system theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('cholesterolSlayerTheme')) {
+      document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      updateThemeIcon(e.matches);
+    }
+  });
+
   function init() {
+    initTheme();
     renderTip();
     renderQuests();
     renderMeals();
